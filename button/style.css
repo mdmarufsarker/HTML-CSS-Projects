@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h2{
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: poppins;
+    font-size: 35px;
+    color: #fa3a00;
+}
+.wrapper{
+    margin:200px auto;
+    width: 80%;
+}
+.btn{
+    display: inline-block;
+    outline: none;
+    border: none;
+    font-family: poppins;
+    font-size: 29px;
+    padding: 20px 50px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: none;
+    border: 1px solid #ccc;
+}
+
+/* Button 1 Animation  */
+.btn1::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fa3a00;
+    transition: 0.8s;
+    left: 0;
+    top: 0;
+    transform: rotate(-90deg);
+    z-index: -1;
+    transform-origin: bottom left;
+}
+.btn1:hover::before{
+    transform: rotate(0deg);
+}
+/* Button 2 Animation  */
+.btn2::before{
+    position: absolute;
+    background: #fa3a00;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    transition: 0.8s;
+    z-index: -1;
+}
+.btn2:hover::before{
+    height: 100%;
+}
+/* Button 3 Animation  */
+.btn3::before{
+    position: absolute;
+    background: #fa3a00;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    transition: 0.8s;
+    z-index: -1;
+}
+.btn3:hover::before{
+    width:100%;
+}
+/* Button 4 Animation  */
+.btn4::before{
+    position: absolute;
+    background: #fa3a00;
+    content: "";
+    height: 0%;
+    width: 100%;
+    transition: 0.8s;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+.btn4:hover::before{
+    height: 100%;
+}
+
+/* Button 5 Animation  */
+.btn5::before{
+    position: absolute;
+    background: #fa3a00;
+    content: "";
+    height: 100%;
+    width: 0%;
+    transition: 0.8s;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+}
+.btn5:hover::before{
+    width: 100%;
+}
+
+/* Button 6 Animation  */
+.btn6::before{
+    position: absolute;
+    background: #fa3a00;
+    content: "";
+    height: 200%;
+    width: 0%;
+    transition: 0.8s;
+    z-index: -1;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn6:hover::before{
+    width: 100%;
+}
+
+/* Button 7 Animation  */
+.btn7::before{
+    position: absolute;
+    background: #fa3a00;
+    content: "";
+    height: 0%;
+    width: 200%;
+    transition: 0.8s;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+}
+.btn7:hover::before{
+    height: 100%;
+}
+
+/* Button 8 Animation  */
+.btn8::before{
+    position: absolute;
+    background: #fa3a00;
+    content: "";
+    height: 100%;
+    width: 100%;
+    transition: 0.8s;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: scale(0);
+}
+.btn8:hover::before{
+    transform: scale(1.5);
+}
+ /* Button 9 Animation  */
+ .btn9::before{
+    position: absolute;
+    background: #fa3a00;
+    content: "";
+    height: 200%;
+    width: 100%;
+    transition: 0.8s;
+    z-index: -1;
+    top: 100%;
+    left: 0%;
+    border-radius: 50%;
+}
+.btn9:hover::before{
+    top: 0;
+}
+/* Button 10 Animation  */
+.btn10::before{
+    position: absolute;
+    background: #fa3a00;
+    content: "";
+    height: 0%;
+    width: 100%;
+    transition: 0.8s;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.btn10:hover::before{
+    height: 280%;
+}
