@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <!-- <h2>Clip Path Mouse Effect</h2> -->
+            <h2>Mouse Effect on hover</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi enim voluptatum dicta aut qui quasi odit maxime voluptate reprehenderit facere illum debitis sint dolor veniam in, praesentium consequuntur odio consequatur dolore eligendi. Tempore dignissimos beatae, possimus quod voluptatibus vitae, veniam accusantium nulla deleniti quisquam debitis odit laboriosam nam. Qui repudiandae necessitatibus libero exercitationem, ut distinctio suscipit aspernatur iste ipsam, aliquam, quam itaque veniam cum? Obcaecati saepe ut incidunt nihil est magnam itaque quidem facilis atque enim quis esse officiis recusandae quasi, consectetur voluptatem facere. Commodi qui possimus provident quasi quos nesciunt hic placeat. Odit ex, enim eaque distinctio doloremque excepturi.
+            </p>
+        </div>
+    </div>
+    
+
+
+    
+    <script type="text/javascript">
+    var curs_pos = document.documentElement;
+    curs_pos.addEventListener("mousemove", e => {
+        curs_pos.style.setProperty('--x', e.clientX + "px");
+        curs_pos.style.setProperty('--y', e.clientY + "px");
+    });
+    </script>
+</body>
+</html>
